@@ -72,3 +72,8 @@ def analyze(data: Payload):
             "confidence": xss_conf
         }
     }
+
+@app.get("/")
+def root():
+    return {"status": "running", "message": "Chameleon ML API is active"}
+
